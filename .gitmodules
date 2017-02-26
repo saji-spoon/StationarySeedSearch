@@ -1,0 +1,3 @@
+[submodule "StationarySeedSearch/DB-CUI"]
+	path = StationarySeedSearch/DB-CUI
+	url = https://github.com/saji-spoon/SM-Tapu-RNGTool.git
