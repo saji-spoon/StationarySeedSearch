@@ -5,3 +5,7 @@ StationarySeedSearch::StationarySeedSearch(QWidget *parent)
 {
     ui.setupUi(this);
 }
+
+
+void StationarySeedSearch::on_createButton_clicked() {}
+void StationarySeedSearch::on_sortButton_clicked(){}

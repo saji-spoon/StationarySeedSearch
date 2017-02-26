@@ -12,4 +12,8 @@ public:
 
 private:
     Ui::StationarySeedSearchClass ui;
+
+private slots:
+    void on_createButton_clicked();
+    void on_sortButton_clicked();
 };
