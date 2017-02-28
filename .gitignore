@@ -213,3 +213,15 @@ ModelManifest.xml
 
 #Qt
 StationarySeedSearch/GeneratedFiles
+
+#DB
+db/
+!.gitkeep
+
+/StationarySeedSearch/googletest
+!gtestd.lib
+!gtest_maind.lib
+!gtest.lib
+!gtest_main.lib
+
+
