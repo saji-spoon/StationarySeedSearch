@@ -70,7 +70,7 @@
        <rect>
         <x>20</x>
         <y>70</y>
-        <width>221</width>
+        <width>381</width>
         <height>32</height>
        </rect>
       </property>
@@ -163,7 +163,7 @@
         </layout>
        </item>
        <item>
-        <widget class="QLabel" name="createSortLabel">
+        <widget class="QLabel" name="sortStatusLabel">
          <property name="text">
           <string/>
          </property>
