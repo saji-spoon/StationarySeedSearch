@@ -215,10 +215,8 @@ ModelManifest.xml
 StationarySeedSearch/GeneratedFiles
 
 #DB
-/StationarySeedSearch/db/*
-/StationarySeedSearch/GTestForDBC/db/*
+StationarySeedSearch/work/db/*
 !.gitkeep
 
 /StationarySeedSearch/googletest
-
 

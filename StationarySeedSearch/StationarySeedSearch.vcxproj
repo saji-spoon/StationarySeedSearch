@@ -127,6 +127,9 @@
     <ProjectReference Include="DBCreate\DBCreate.vcxproj">
       <Project>{11538d8b-0e14-4950-8dd1-19641d43dc1d}</Project>
     </ProjectReference>
+    <ProjectReference Include="DBSort\DBSort.vcxproj">
+      <Project>{4954ce8b-8852-4390-86f2-7cf742604031}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

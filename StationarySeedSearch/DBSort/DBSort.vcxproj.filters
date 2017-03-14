@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\DB-CUI\db-create.cpp">
+    <ClCompile Include="..\DB-CUI\db-sort.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="..\DB-CUI\tickSeed.cpp">
@@ -24,10 +24,5 @@
     <ClCompile Include="..\DB-CUI\util.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\DB-CUI\db-create.hpp">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
