@@ -1,4 +1,4 @@
-#include "stationaryseedsearch.h"
+﻿#include "stationaryseedsearch.h"
 
 StationarySeedSearch::StationarySeedSearch(QWidget *parent)
     : QWidget(parent), m_cState(createState::Init), m_sState(sortState::Init)

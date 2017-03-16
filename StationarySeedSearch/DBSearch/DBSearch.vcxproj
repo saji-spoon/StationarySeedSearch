@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{ADDD610A-949C-46E2-B1D3-4776BAB4C175}</ProjectGuid>
+    <ProjectGuid>{83E64D3A-5707-47D5-A6AC-71719A11FD93}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>GTestForDBS</RootNamespace>
+    <RootNamespace>DBSearch</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -39,7 +39,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -74,8 +74,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)\gtest_inc</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;$(SolutionDir)\gtest</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -148,12 +146,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DBSort\DBSort.vcxproj">
-      <Project>{4954ce8b-8852-4390-86f2-7cf742604031}</Project>
+    <ClCompile Include="..\DB-CUI\db-search.cpp" />
+    <ClCompile Include="..\DB-CUI\SFMTUtil.cpp" />
+    <ClCompile Include="..\DB-CUI\tickSeed.cpp" />
+    <ClCompile Include="..\DB-CUI\util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SFMT\SFMT.vcxproj">
+      <Project>{5e2dc098-d704-4299-87e1-461a7d1a1552}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClInclude Include="..\DB-CUI\db-search.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
